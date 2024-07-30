@@ -208,7 +208,7 @@ const Profile = ({ name, callback, registrationData, resolverExists }: Props) =>
               avatarFile={avatarFile}
               handleCancel={() => setModalOpen(false)}
               type={_modalOption}
-              handleSubmit={(type: 'nft' | 'upload', uri: string, display?: string) => {
+              handleSubmit={(type, uri, display) => {
                 setAvatar(uri)
                 setAvatarSrc(display)
                 setModalOpen(false)
